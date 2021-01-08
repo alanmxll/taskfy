@@ -1,18 +1,30 @@
-import React from "react";
-import { useDrag } from "react-dnd";
+import React, { useRef } from "react";
+import { useDrag, useDrop } from "react-dnd";
 
 import { Container, Label } from "./styles";
 
 function Cards({ data }) {
+  const ref = useRef();
+
   const [{ isDragging }, dragRef] = useDrag({
-    item: { type: "CARD" },
+    item: { type: "CARD", id: data.id },
     collect: (monitor) => ({
       isDragging: monitor.isDragging(),
     }),
   });
 
+  const [, dropRef] = useDrop({
+    accept: "CARD",
+    hover(item, monitor) {
+      console.log(`FROM: ${item.id}`);
+      console.log(`TO: ${data.id}`);
+    },
+  });
+
+  dragRef(dropRef(ref));
+
   return (
-    <Container ref={dragRef} isDragging={isDragging}>
+    <Container ref={ref} isDragging={isDragging}>
       <header>
         {data.labels.map((label) => (
           <Label key={label} color={label} />
