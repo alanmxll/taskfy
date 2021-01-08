@@ -6,23 +6,22 @@ import Card from "../Cards";
 
 import { Container } from "./styles";
 
-function List() {
+function List({ data }) {
   return (
-    <Container>
+    <Container done={data.done}>
       <header>
-        <h2>Tasks</h2>
-        <button type="button">
-          <MdAdd size={24} color="FFF" />
-        </button>
+        <h2>{data.title}</h2>
+        {data.creatable && (
+          <button type="button">
+            <MdAdd size={24} color="FFF" />
+          </button>
+        )}
       </header>
 
       <ul>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {data.cards.map((card) => (
+          <Card key={card.id} data={card} />
+        ))}
       </ul>
     </Container>
   );

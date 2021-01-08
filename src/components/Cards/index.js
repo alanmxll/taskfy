@@ -2,17 +2,16 @@ import React from "react";
 
 import { Container, Label } from "./styles";
 
-function Cards() {
+function Cards({ data }) {
   return (
     <Container>
       <header>
-        <Label color="#3dc050" />
+        {data.labels.map((label) => (
+          <Label key={label} color={label} />
+        ))}
       </header>
-      <p>Learn about Drag n Drop function</p>
-      <img
-        src="https://cdn.icon-icons.com/icons2/1371/PNG/512/robot02_90810.png"
-        alt=""
-      />
+      <p>{data.content}</p>
+      {data.user && <img src={data.user} alt="" />}
     </Container>
   );
 }
