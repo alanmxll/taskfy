@@ -17,7 +17,7 @@ export const Container = styled.div`
     height: 42px;
 
     h2 {
-      font-weight: 500;
+      font-weight: 600;
       font-size: 16px;
       padding: 0 10px;
     }
