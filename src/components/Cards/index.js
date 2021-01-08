@@ -10,7 +10,7 @@ function Cards() {
       </header>
       <p>Learn about Drag n Drop function</p>
       <img
-        src="https://api.adorable.io/avatars/285/10@adorable.io.png"
+        src="https://cdn.icon-icons.com/icons2/1371/PNG/512/robot02_90810.png"
         alt=""
       />
     </Container>
