@@ -16,7 +16,7 @@ export default createGlobalStyle`
 
   body {
     font: 14px 'Roboto', sans-serif;
-    background: #ecf8f8;
+    background: #ecf1f8;
     color: #333;
     -webkit-font-smoothing: antialiased !important;
   }
