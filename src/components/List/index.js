@@ -1,6 +1,7 @@
 import React from "react";
 
 import { MdAdd } from "react-icons/md";
+import { BiDotsVerticalRounded } from "react-icons/bi";
 
 import Card from "../Cards";
 
@@ -11,11 +12,18 @@ function List({ data, index: listIndex }) {
     <Container done={data.done}>
       <header>
         <h2>{data.title}</h2>
-        {data.creatable && (
-          <button type="button">
-            <MdAdd size={24} color="FFF" />
-          </button>
-        )}
+        <div>
+          {data.creatable && (
+            <button type="button">
+              <MdAdd size={24} color="FFF" />
+            </button>
+          )}
+          <BiDotsVerticalRounded
+            size={22}
+            color={"#888"}
+            style={{ cursor: "pointer" }}
+          />
+        </div>
       </header>
 
       <ul>

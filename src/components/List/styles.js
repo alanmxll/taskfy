@@ -28,6 +28,7 @@ export const Container = styled.div`
       border-radius: 18px;
       background: #3dc050;
       border: 0;
+      margin-right: 5px;
       cursor: pointer;
     }
   }
