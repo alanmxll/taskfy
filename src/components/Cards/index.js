@@ -4,6 +4,7 @@ import { useDrag, useDrop } from "react-dnd";
 import BoardContext from "../Board/context";
 
 import { Container, Label } from "./styles";
+import Avatar from "../../assets/images/robot_avatar.png";
 
 function Cards({ data, index, listIndex }) {
   const ref = useRef();
@@ -63,7 +64,7 @@ function Cards({ data, index, listIndex }) {
         ))}
       </header>
       <p>{data.content}</p>
-      {data.user && <img src={data.user} alt="" />}
+      {data.user && <img src={Avatar} width={22} alt="" />}
     </Container>
   );
 }
