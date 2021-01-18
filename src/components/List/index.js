@@ -4,7 +4,7 @@ import { MdAdd } from "react-icons/md";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 
 import Card from "../Cards";
-import CreateTask from "../Modals/createTask";
+import CreateTask from "../Modals/CreateTask";
 
 import { Container } from "./styles";
 

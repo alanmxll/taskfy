@@ -14,11 +14,14 @@ function CreateTask({ onClose }) {
       <div className="contentCard">
         <div className="colorTop" />
         <HeaderModal>
-          <FaRegEdit size={40} />
-          <div className="simple-modal-title">
-            <h2 className="simple-modal-title">Task Manager</h2>
-            <h1 className="simple-modal-title">Form</h1>
+          <div className="container">
+            <FaRegEdit size={40} />
+            <div className="simple-modal-title">
+              <h2 className="simple-modal-title">Task Manager</h2>
+              <h1 className="simple-modal-title">Form</h1>
+            </div>
           </div>
+          <button>Share</button>
         </HeaderModal>
       </div>
     </Container>

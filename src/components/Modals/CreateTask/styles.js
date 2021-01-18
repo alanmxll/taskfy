@@ -38,6 +38,11 @@ export const HeaderModal = styled.div`
   color: #0f7b1e;
   padding: 30px;
   padding-left: 35px;
+  justify-content: space-between;
+
+  div.container {
+    display: flex;
+  }
 
   div.simple-modal-title {
     padding-left: 5px;
@@ -50,5 +55,20 @@ export const HeaderModal = styled.div`
 
   h1.simple-modal-title {
     font-size: 20px;
+  }
+
+  button {
+    background-color: rgba(0, 255, 50, 0.15);
+    color: #0f7b1e;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding: 0 20px;
+    cursor: pointer;
   }
 `;
