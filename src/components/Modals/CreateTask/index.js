@@ -2,8 +2,9 @@ import React from "react";
 
 import { Container, HeaderModal } from "./styles";
 
-import { RiCloseFill } from "react-icons/ri";
+import { RiCloseFill, RiAttachmentLine } from "react-icons/ri";
 import { FaRegEdit } from "react-icons/fa";
+import { AiOutlineCreditCard } from "react-icons/ai";
 
 function CreateTask({ onClose }) {
   return (
@@ -11,7 +12,7 @@ function CreateTask({ onClose }) {
       <div className="closeButton" title="Close" onClick={onClose}>
         <RiCloseFill size={30} color="0f7b1e" />
       </div>
-      <div className="contentCard">
+      <div className="headerContainer">
         <div className="colorTop" />
         <HeaderModal>
           <div className="container">
@@ -23,6 +24,16 @@ function CreateTask({ onClose }) {
           </div>
           <button>Share</button>
         </HeaderModal>
+        <div className="actionButtons">
+          <div className="actionButtons">
+            <AiOutlineCreditCard size={20} color={"0f7b1e"} />
+            <p>Due date</p>
+          </div>
+          <div className="actionButtons">
+            <RiAttachmentLine size={20} color={"0f7b1e"} />
+            <p>Attachment</p>
+          </div>
+        </div>
       </div>
     </Container>
   );

@@ -23,13 +23,31 @@ export const Container = styled.div`
     cursor: pointer;
   }
 
-  div.contentCard {
+  div.headerContainer {
     position: absolute;
     top: 5.5%;
     left: 72.5%;
     width: 500px;
     background-color: #fff;
     border-radius: 5px;
+  }
+
+  div.actionButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    :first-child {
+      padding-left: 15px;
+    }
+
+    p {
+      color: #0f7b1e;
+      font-weight: bold;
+      margin-left: 5px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 `;
 
