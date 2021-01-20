@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  padding: 30px;
+
   div.colorTop {
     background: #3dc050;
     width: 500px;
@@ -34,11 +36,10 @@ export const Container = styled.div`
 
   div.actionButtons {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin: 10px;
+    margin-left: 10px;
     :first-child {
-      padding-left: 15px;
+      padding-left: 10px;
     }
 
     p {
@@ -51,11 +52,10 @@ export const Container = styled.div`
   }
 `;
 
-export const HeaderModal = styled.div`
+export const Header = styled.div`
   display: flex;
   color: #0f7b1e;
   padding: 30px;
-  padding-left: 35px;
   justify-content: space-between;
 
   div.container {
@@ -66,13 +66,13 @@ export const HeaderModal = styled.div`
     padding-left: 5px;
   }
 
-  h2.simple-modal-title {
-    color: #888;
-    font-size: 16px;
+  h1 {
+    font-size: 20px;
   }
 
-  h1.simple-modal-title {
-    font-size: 20px;
+  h2 {
+    color: #888;
+    font-size: 16px;
   }
 
   button {
@@ -88,5 +88,65 @@ export const HeaderModal = styled.div`
     margin-right: 10px;
     padding: 0 20px;
     cursor: pointer;
+  }
+`;
+
+export const FirstField = styled.div`
+  padding: 30px;
+  font-weight: bold;
+
+  h2 {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  p {
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #0f7b1e;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+`;
+
+export const SecondField = styled.div`
+  padding-left: 30px;
+  font-weight: bold;
+  color: #888;
+  text-decoration: underline;
+  cursor: pointer;
+`;
+
+export const ThirdField = styled.div`
+  padding: 0 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+
+  div.third-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div.third-action {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    cursor: pointer;
+
+    p {
+      text-decoration: underline;
+      color: #0f7b1e;
+      margin: 3px;
+    }
   }
 `;
