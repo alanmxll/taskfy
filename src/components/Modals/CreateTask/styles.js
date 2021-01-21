@@ -3,6 +3,32 @@ import styled from "styled-components";
 export const Container = styled.div`
   padding: 30px;
 
+  button.create-issue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: #3dc050;
+    width: 100%;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+  }
+
+  p.button-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  p.p-button {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
   div.colorTop {
     background: #3dc050;
     width: 500px;
@@ -103,7 +129,7 @@ export const FirstField = styled.div`
   p {
     color: #888;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 5px;
   }
 
@@ -119,11 +145,32 @@ export const FirstField = styled.div`
 `;
 
 export const SecondField = styled.div`
-  padding-left: 30px;
-  font-weight: bold;
-  color: #888;
-  text-decoration: underline;
-  cursor: pointer;
+  padding: 0 30px;
+
+  p.second-title {
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    :hover {
+      text-decoration: underline;
+      color: #0f7b1e;
+    }
+  }
+
+  p {
+    font-weight: bold;
+    color: #888;
+  }
+
+  input {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #0f7b1e;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
 `;
 
 export const ThirdField = styled.div`
@@ -144,9 +191,69 @@ export const ThirdField = styled.div`
     cursor: pointer;
 
     p {
+      color: #888;
+      margin: 3px;
+      :hover {
+        text-decoration: underline;
+        color: #0f7b1e;
+      }
+    }
+  }
+`;
+
+export const FourthField = styled.div`
+  padding: 0 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+
+  div.fourth-action {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    cursor: pointer;
+
+    p {
+      color: #888;
+      margin: 3px;
+      :hover {
+        text-decoration: underline;
+        color: #0f7b1e;
+      }
+    }
+  }
+`;
+
+export const CustomFormButton = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
+  div.custom-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgba(0, 255, 50, 0.15);
+  }
+
+  p.p-click {
+    padding-left: 5px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    :hover {
       text-decoration: underline;
       color: #0f7b1e;
-      margin: 3px;
     }
+  }
+
+  p.p-no-click {
+    padding-left: 5px;
+    font-weight: bold;
+    color: #888;
   }
 `;
