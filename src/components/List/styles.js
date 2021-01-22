@@ -33,6 +33,14 @@ export const Container = styled.div`
     }
   }
 
+  div.header-container {
+    p {
+      font-weight: bold;
+      margin-left: 10px;
+      color: #888;
+    }
+  }
+
   ul {
     margin-top: 30px;
   }

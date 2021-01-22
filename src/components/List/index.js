@@ -23,28 +23,31 @@ function List({ data, index: listIndex }) {
 
   return (
     <Container done={data.done}>
-      <header>
-        <h2>{data.title}</h2>
-        <div>
-          {data.creatable && (
-            <button type="button" onClick={handleOpen}>
-              <MdAdd size={24} color="FFF" />
-            </button>
-          )}
-          <Modal
-            open={open}
-            aria-labelledby="simple-modal-title"
-            aria-describedby="simple-modal-description"
-          >
-            <CreateTask onClose={handleClose} />
-          </Modal>
-          <BiDotsVerticalRounded
-            size={22}
-            color={"#888"}
-            style={{ cursor: "pointer" }}
-          />
-        </div>
-      </header>
+      <div className="header-container">
+        <header>
+          <h2>{data.title}</h2>
+          <div>
+            {data.creatable && (
+              <button type="button" onClick={handleOpen}>
+                <MdAdd size={24} color="FFF" />
+              </button>
+            )}
+            <Modal
+              open={open}
+              aria-labelledby="simple-modal-title"
+              aria-describedby="simple-modal-description"
+            >
+              <CreateTask onClose={handleClose} />
+            </Modal>
+            <BiDotsVerticalRounded
+              size={22}
+              color={"#888"}
+              style={{ cursor: "pointer" }}
+            />
+          </div>
+        </header>
+        <p>{data.cards.length} Total</p>
+      </div>
 
       <ul>
         {data.cards.map((card, index) => (
