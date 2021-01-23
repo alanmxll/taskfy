@@ -8,6 +8,16 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  div.div-title {
+    display: flex;
+    align-items: center;
+
+    h1,
+    h2 {
+      margin-left: 5px;
+    }
+  }
 `;
 
 export const SubContainer = styled.div`
@@ -32,8 +42,10 @@ export const UserMenu = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
     background-color: #fb572a;
+    border: 1px solid rgba(230, 236, 245, 0.4);
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.8);
     width: 70px;
     height: 35px;
     margin: 10px;

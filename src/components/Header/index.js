@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { BiBell, BiDotsVerticalRounded } from "react-icons/bi";
 import { RiChatSmileLine } from "react-icons/ri";
+import { CgGoogleTasks } from "react-icons/cg";
 
 import { Container, SubContainer, UserMenu } from "./styles";
 
@@ -13,7 +14,11 @@ function Header() {
   return (
     <Fragment>
       <Container>
-        <h1>Taskfy</h1>
+        <div className="div-title">
+          <CgGoogleTasks size={30}/>
+          <h1>Taskfy</h1>
+          <h2> - Team Management</h2>
+        </div>
         <UserMenu>
           <RiChatSmileLine title={"Chat"} size={26} cursor={"pointer"} />
           <div className="div-notification" title={"Notification"}>
