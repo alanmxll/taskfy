@@ -7,6 +7,7 @@ export const Container = styled.div`
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const SubContainer = styled.div`
@@ -16,4 +17,32 @@ export const SubContainer = styled.div`
   color: #fff;
   display: flex;
   align-items: center;
+`;
+
+export const UserMenu = styled.div`
+  display: flex;
+  align-items: center;
+
+  img {
+    background-color: #fff;
+    border-radius: 100%;
+  }
+
+  div.div-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fb572a;
+    width: 70px;
+    height: 35px;
+    margin: 10px;
+    cursor: pointer;
+
+    p {
+      font-weight: bold;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  }
 `;
