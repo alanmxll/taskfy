@@ -27,6 +27,12 @@ export const SubContainer = styled.div`
   color: #fff;
   display: flex;
   align-items: center;
+
+  div.end-subcontainer {
+    height: 2rem;
+    margin-left: 30px;
+    border: 1.5px solid #fff;
+  }
 `;
 
 export const UserMenu = styled.div`

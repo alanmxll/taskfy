@@ -44,7 +44,7 @@ export const Container = styled.div`
     background-color: #fff;
     position: absolute;
     top: 1%;
-    left: 96.6%;
+    right: 1%;
     width: 35px;
     height: 35px;
     border-radius: 5px;
@@ -54,7 +54,7 @@ export const Container = styled.div`
   div.headerContainer {
     position: absolute;
     top: 5.5%;
-    left: 72.5%;
+    right: 1%;
     width: 500px;
     background-color: #fff;
     border-radius: 5px;

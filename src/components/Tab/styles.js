@@ -5,11 +5,13 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   margin-left: 20px;
+  height: 3.5rem;
+  border-bottom: ${({ selected }) => (selected ? "3px solid #fff" : "none")};
+  opacity: ${({ selected }) => (selected ? "1" : "0.5")};
   cursor: pointer;
-  :last-child {
-    border-right: 1px solid #fff;
-    height: 2rem;
-    padding-right: 30px;
+
+  :hover {
+    border-bottom: 3px solid #fff;
   }
 `;
 

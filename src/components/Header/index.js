@@ -15,7 +15,7 @@ function Header() {
     <Fragment>
       <Container>
         <div className="div-title">
-          <CgGoogleTasks size={30}/>
+          <CgGoogleTasks size={30} />
           <h1>Taskfy</h1>
           <h2> - Team Management</h2>
         </div>
@@ -31,9 +31,10 @@ function Header() {
       </Container>
       <SubContainer>
         <IoIosArrowBack size={24} cursor={"pointer"} />
-        <Tab title="KanBan"></Tab>
-        <Tab title="Reports"></Tab>
-        <Tab title="Calendar"></Tab>
+        <Tab title="KanBan" selected={true} />
+        <Tab title="Reports" selected={false} />
+        <Tab title="Calendar" selected={false} />
+        <div className="end-subcontainer" />
       </SubContainer>
     </Fragment>
   );

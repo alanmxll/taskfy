@@ -6,7 +6,7 @@ import { BsKanban } from "react-icons/bs";
 import { CgCalendarToday } from "react-icons/cg";
 import { HiTemplate } from "react-icons/hi";
 
-function Tab({ title }) {
+function Tab({ title, selected }) {
   function returnTab() {
     switch (title) {
       case "KanBan":
@@ -20,7 +20,7 @@ function Tab({ title }) {
     }
   }
   return (
-    <Container>
+    <Container selected={selected}>
       {returnTab()}
       <Label>{title}</Label>
     </Container>
